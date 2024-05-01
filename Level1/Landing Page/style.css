@@ -1,0 +1,136 @@
+/* Resetting default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    margin:20px 50px;
+    padding: 100px 20px;
+    color:white;
+    background-color: #f4f4f4; 
+    min-height: 35vh;
+    background-image: url("bg.jpg");
+    background-size: 1200px 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-left{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width:100px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+
+@media screen  and (max-width:768px){
+    .hero{
+        background-image: url('bg.jpg');
+        background-size: 600px 400px;
+    }
+    .container-left{
+        width:300px;
+    }
+    
+}
+
+
+.section-container{
+   
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin:30px 70px;
+    background-color: #F8FCF5;
+    padding:20px;
+}
+
+section h1{
+    
+    color:blue;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+section h1:hover{
+    
+    color:navy;
+   
+    font-size: 50px;
+}
+
+.submit-btn{
+    color:white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 0.3rem;;
+}
+
+.content{
+    background-color: #f4f4f4;
+}
